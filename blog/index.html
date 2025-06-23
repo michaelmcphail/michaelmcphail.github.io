@@ -1,0 +1,49 @@
+---
+layout: default
+title: Blog
+---
+
+<section class="blog-header">
+    <div class="container">
+        <h1>Blog</h1>
+        <p>Thoughts, insights, and learnings from my journey.</p>
+    </div>
+</section>
+
+<section class="blog-posts">
+    <div class="container">
+        {% if site.posts.size > 0 %}
+        <div class="posts-grid">
+            {% for post in site.posts %}
+            <article class="post-preview">
+                <header class="post-preview-header">
+                    <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+                    <div class="post-meta">
+                        <time datetime="{{ post.date | date_to_xmlschema }}">
+                            {{ post.date | date: "%B %-d, %Y" }}
+                        </time>
+                        {% if post.categories %}
+                        <span class="categories">
+                            {% for category in post.categories %}
+                            <a href="{{ '/blog/categories/' | relative_url }}{{ category | slugify }}">{{ category }}</a>
+                            {% endfor %}
+                        </span>
+                        {% endif %}
+                    </div>
+                </header>
+                {% if post.excerpt %}
+                <div class="post-excerpt">
+                    {{ post.excerpt }}
+                </div>
+                {% endif %}
+                <a href="{{ post.url | relative_url }}" class="read-more">Read more &rarr;</a>
+            </article>
+            {% endfor %}
+        </div>
+        {% else %}
+        <div class="no-posts">
+            <p>No blog posts yet. Check back soon!</p>
+        </div>
+        {% endif %}
+    </div>
+</section> 

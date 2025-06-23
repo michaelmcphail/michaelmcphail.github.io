@@ -1,0 +1,57 @@
+---
+layout: default
+title: Projects
+---
+
+<section class="projects-header">
+    <div class="container">
+        <h1>Projects</h1>
+        <p>A collection of my portfolio projects, including interactive dashboards and visualizations.</p>
+    </div>
+</section>
+
+<section class="projects-grid">
+    <div class="container">
+        {% if site.projects.size > 0 %}
+        <div class="projects-list">
+            {% for project in site.projects %}
+            <article class="project-card">
+                <div class="project-card-content">
+                    <header class="project-card-header">
+                        <h2><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h2>
+                        {% if project.description %}
+                        <p class="project-description">{{ project.description }}</p>
+                        {% endif %}
+                    </header>
+                    
+                    <div class="project-meta">
+                        {% if project.date %}
+                        <time datetime="{{ project.date | date_to_xmlschema }}">
+                            {{ project.date | date: "%B %Y" }}
+                        </time>
+                        {% endif %}
+                        {% if project.technologies %}
+                        <div class="technologies">
+                            {% for tech in project.technologies %}
+                            <span class="tech-tag">{{ tech }}</span>
+                            {% endfor %}
+                        </div>
+                        {% endif %}
+                    </div>
+                    
+                    {% if project.external_link %}
+                    <div class="project-links">
+                        <a href="{{ project.external_link }}" class="btn btn-small" target="_blank">Live Demo</a>
+                    </div>
+                    {% endif %}
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+        {% else %}
+        <div class="no-projects">
+            <p>No projects yet. Check back soon!</p>
+        </div>
+        {% endif %}
+    </div>
+</section> 

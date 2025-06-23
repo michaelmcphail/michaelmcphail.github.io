@@ -1,0 +1,59 @@
+# Site settings
+title: Michael McPhail
+email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Personal portfolio and blog showcasing my work, projects, and thoughts.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: your-twitter-handle
+github_username:  your-github-handle
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:title/
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /blog/:title/
+  projects:
+    output: true
+    permalink: /projects/:title/
+  work:
+    output: true
+    permalink: /work/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      path: ""
+      type: "work"
+    values:
+      layout: "work"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/ 

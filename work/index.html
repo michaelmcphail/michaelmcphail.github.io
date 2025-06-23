@@ -1,0 +1,61 @@
+---
+layout: default
+title: Work Experience
+---
+
+<section class="work-header">
+    <div class="container">
+        <h1>Work Experience</h1>
+        <p>My professional journey and career highlights.</p>
+    </div>
+</section>
+
+<section class="work-timeline">
+    <div class="container">
+        {% if site.work.size > 0 %}
+        <div class="work-list">
+            {% for work in site.work %}
+            <article class="work-card">
+                <div class="work-card-content">
+                    <header class="work-card-header">
+                        <h2><a href="{{ work.url | relative_url }}">{{ work.title }}</a></h2>
+                        {% if work.company %}
+                        <p class="company">{{ work.company }}</p>
+                        {% endif %}
+                    </header>
+                    
+                    <div class="work-meta">
+                        {% if work.start_date %}
+                        <time datetime="{{ work.start_date | date_to_xmlschema }}">
+                            {{ work.start_date | date: "%B %Y" }}
+                        </time>
+                        {% endif %}
+                        {% if work.end_date %}
+                        <span> - </span>
+                        <time datetime="{{ work.end_date | date_to_xmlschema }}">
+                            {{ work.end_date | date: "%B %Y" }}
+                        </time>
+                        {% else %}
+                        <span> - Present</span>
+                        {% endif %}
+                        {% if work.location %}
+                        <span class="location">{{ work.location }}</span>
+                        {% endif %}
+                    </div>
+                    
+                    {% if work.excerpt %}
+                    <div class="work-excerpt">
+                        {{ work.excerpt }}
+                    </div>
+                    {% endif %}
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+        {% else %}
+        <div class="no-work">
+            <p>No work experience entries yet. Check back soon!</p>
+        </div>
+        {% endif %}
+    </div>
+</section> 

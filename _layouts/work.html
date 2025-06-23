@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<article class="work-entry">
+    <header class="work-header">
+        <div class="container">
+            <h1 class="work-title">{{ page.title }}</h1>
+            {% if page.company %}
+            <p class="company">{{ page.company }}</p>
+            {% endif %}
+            <div class="work-meta">
+                {% if page.start_date %}
+                <time datetime="{{ page.start_date | date_to_xmlschema }}">
+                    {{ page.start_date | date: "%B %Y" }}
+                </time>
+                {% endif %}
+                {% if page.end_date %}
+                <span> - </span>
+                <time datetime="{{ page.end_date | date_to_xmlschema }}">
+                    {{ page.end_date | date: "%B %Y" }}
+                </time>
+                {% else %}
+                <span> - Present</span>
+                {% endif %}
+                {% if page.location %}
+                <span class="location">{{ page.location }}</span>
+                {% endif %}
+            </div>
+        </div>
+    </header>
+
+    <div class="work-content">
+        <div class="container">
+            {{ content }}
+        </div>
+    </div>
+</article> 
