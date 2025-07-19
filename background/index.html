@@ -1,0 +1,61 @@
+---
+layout: default
+title: Background
+---
+
+<section class="background-header">
+    <div class="container">
+        <h1>Background</h1>
+        <p>My background and experience.</p>
+    </div>
+</section>
+
+<section class="background-timeline">
+    <div class="container">
+        {% if site.background.size > 0 %}
+        <div class="background-list">
+            {% for background in site.background %}
+            <article class="background-card">
+                <div class="background-card-content">
+                    <header class="background-card-header">
+                        <h2><a href="{{ background.url | relative_url }}">{{ background.title }}</a></h2>
+                        {% if background.company %}
+                        <p class="company">{{ background.company }}</p>
+                        {% endif %}
+                    </header>
+                    
+                    <div class="background-meta">
+                        {% if background.start_date %}
+                        <time datetime="{{ background.start_date | date_to_xmlschema }}">
+                            {{ background.start_date | date: "%B %Y" }}
+                        </time>
+                        {% endif %}
+                        {% if background.end_date %}
+                        <span> - </span>
+                        <time datetime="{{ background.end_date | date_to_xmlschema }}">
+                            {{ background.end_date | date: "%B %Y" }}
+                        </time>
+                        {% else %}
+                        <span> - Present</span>
+                        {% endif %}
+                        {% if background.location %}
+                        <span class="location">{{ background.location }}</span>
+                        {% endif %}
+                    </div>
+                    
+                    {% if background.excerpt %}
+                    <div class="background-excerpt">
+                        {{ background.excerpt }}
+                    </div>
+                    {% endif %}
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+        {% else %}
+        <div class="no-background">
+            <p>No background entries yet. Check back soon!</p>
+        </div>
+        {% endif %}
+    </div>
+</section> 

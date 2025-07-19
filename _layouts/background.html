@@ -2,14 +2,14 @@
 layout: default
 ---
 
-<article class="work-entry">
-    <header class="work-header">
+<article class="background-entry">
+    <header class="background-header">
         <div class="container">
-            <h1 class="work-title">{{ page.title }}</h1>
+            <h1 class="background-title">{{ page.title }}</h1>
             {% if page.company %}
             <p class="company">{{ page.company }}</p>
             {% endif %}
-            <div class="work-meta">
+            <div class="background-meta">
                 {% if page.start_date %}
                 <time datetime="{{ page.start_date | date_to_xmlschema }}">
                     {{ page.start_date | date: "%B %Y" }}
@@ -30,7 +30,7 @@ layout: default
         </div>
     </header>
 
-    <div class="work-content">
+    <div class="background-content">
         <div class="container">
             {{ content }}
         </div>

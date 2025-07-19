@@ -7,7 +7,7 @@ A modern, responsive personal website built with Jekyll showcasing my work, proj
 - **Responsive Design** - Works beautifully on all devices
 - **Blog Section** - Share your thoughts and insights
 - **Portfolio Projects** - Showcase your work with interactive elements
-- **Work Experience** - Professional background and achievements
+- **Background** - Professional background 
 - **Interactive Dashboards** - Embed live projects and visualizations
 - **SEO Optimized** - Built-in search engine optimization
 - **Fast Loading** - Optimized for performance
@@ -21,12 +21,12 @@ michaelmcphail.github.io/
 │   ├── default.html         # Main layout template
 │   ├── post.html           # Blog post layout
 │   ├── project.html        # Project page layout
-│   └── work.html           # Work experience layout
+│   └── background.html     # Background layout
 ├── _posts/                  # Blog posts
 │   └── 2024-01-15-welcome-to-my-blog.md
 ├── _projects/              # Portfolio projects
 │   └── example-dashboard-project.md
-├── _work/                  # Work experience entries
+├── _background/            # Background entries
 │   └── senior-data-scientist.md
 ├── assets/                 # Static assets
 │   ├── css/
@@ -37,7 +37,7 @@ michaelmcphail.github.io/
 │   └── index.html
 ├── projects/               # Projects index page
 │   └── index.html
-├── work/                   # Work experience index page
+├── background/             # Background index page
 │   └── index.html
 ├── index.html              # Homepage
 ├── Gemfile                 # Ruby dependencies
@@ -120,12 +120,12 @@ external_link: "https://your-project-url.com"
 Project content here...
 ```
 
-#### Work Experience
-Create new files in `_work/` with the format `job-title.md`:
+#### Background
+Create new files in `_background/` with the format `job-title.md`:
 
 ```markdown
 ---
-layout: work
+layout: background
 title: "Job Title"
 company: "Company Name"
 start_date: 2022-03-01

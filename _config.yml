@@ -21,9 +21,9 @@ collections:
   projects:
     output: true
     permalink: /projects/:title/
-  work:
+  background:
     output: true
-    permalink: /work/:title/
+    permalink: /background/:title/
 
 # Defaults
 defaults:
@@ -39,9 +39,9 @@ defaults:
       layout: "project"
   - scope:
       path: ""
-      type: "work"
+      type: "background"
     values:
-      layout: "work"
+      layout: "background"
 
 # Plugins
 plugins:

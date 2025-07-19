@@ -34,13 +34,13 @@ p {
 }
 
 a {
-    color: #007acc;
+    color: #002147;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #005a9e;
+    color: #003366;
 }
 
 /* Header */
@@ -77,12 +77,12 @@ a:hover {
 }
 
 .nav-links a:hover {
-    color: #007acc;
+    color: #002147;
 }
 
 /* Hero section */
 .hero {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #002147 0%, #003366 100%);
     color: white;
     padding: 4rem 0;
     text-align: center;
@@ -149,7 +149,7 @@ a:hover {
 .btn {
     display: inline-block;
     padding: 0.75rem 1.5rem;
-    background-color: #007acc;
+    background-color: #002147;
     color: white;
     border-radius: 4px;
     font-weight: 500;
@@ -157,7 +157,7 @@ a:hover {
 }
 
 .btn:hover {
-    background-color: #005a9e;
+    background-color: #003366;
     color: white;
 }
 
@@ -167,23 +167,23 @@ a:hover {
 }
 
 .btn-primary {
-    background-color: #007acc;
+    background-color: #002147;
 }
 
 /* Blog styles */
-.blog-header, .projects-header, .work-header {
+.blog-header, .projects-header, .background-header {
     background-color: #f8f9fa;
     padding: 3rem 0;
     text-align: center;
 }
 
-.posts-grid, .projects-list, .work-list {
+.posts-grid, .projects-list, .background-list {
     display: grid;
     gap: 2rem;
     margin-top: 2rem;
 }
 
-.post-preview, .project-card, .work-card {
+.post-preview, .project-card, .background-card {
     background: white;
     padding: 2rem;
     border-radius: 8px;
@@ -191,11 +191,11 @@ a:hover {
     transition: transform 0.3s ease;
 }
 
-.post-preview:hover, .project-card:hover, .work-card:hover {
+.post-preview:hover, .project-card:hover, .background-card:hover {
     transform: translateY(-2px);
 }
 
-.post-meta, .project-meta, .work-meta {
+.post-meta, .project-meta, .background-meta {
     color: #666;
     font-size: 0.875rem;
     margin-bottom: 1rem;
@@ -214,7 +214,7 @@ a:hover {
 }
 
 .read-more {
-    color: #007acc;
+    color: #002147;
     font-weight: 500;
 }
 
@@ -233,18 +233,18 @@ a:hover {
     margin-top: 1rem;
 }
 
-/* Post/Project/Work detail pages */
-.post, .project, .work-entry {
+/* Post/Project/Background detail pages */
+.post, .project, .background-entry {
     padding: 2rem 0;
 }
 
-.post-header, .project-header, .work-header {
+.post-header, .project-header, .background-header {
     margin-bottom: 2rem;
     padding-bottom: 1rem;
     border-bottom: 1px solid #e1e5e9;
 }
 
-.post-content, .project-content, .work-content {
+.post-content, .project-content, .background-content {
     max-width: 800px;
     margin: 0 auto;
 }
@@ -267,7 +267,7 @@ a:hover {
 }
 
 .site-footer a {
-    color: #007acc;
+    color: white;
 }
 
 /* Responsive design */
