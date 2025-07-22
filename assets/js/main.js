@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Smooth animations for cards
-    const cards = document.querySelectorAll('.post-preview, .project-card, .work-card, .featured-item');
+    const cards = document.querySelectorAll('.post-preview, .project-card, .background-card, .featured-item');
     const cardObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (searchInput) {
         searchInput.addEventListener('input', function() {
             const query = this.value.toLowerCase();
-            const items = document.querySelectorAll('.post-preview, .project-card, .work-card');
+            const items = document.querySelectorAll('.post-preview, .project-card, .background-card');
             
             items.forEach(item => {
                 const title = item.querySelector('h2').textContent.toLowerCase();
