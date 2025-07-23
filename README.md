@@ -46,13 +46,63 @@ michaelmcphail.github.io/
 
 ## Getting Started
 
-### Prerequisites
+### Option 1: Using Docker (Recommended)
 
+#### Prerequisites
+- Docker
+- Docker Compose
+
+#### Quick Start with Docker
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/michaelmcphail.github.io.git
+   cd michaelmcphail.github.io
+   ```
+
+2. **Build and start the container**
+   ```bash
+   docker-compose up --build
+   ```
+
+3. **View your site**
+   Open your browser and go to `http://localhost:4000`
+
+4. **Stop the container**
+   ```bash
+   docker-compose down
+   ```
+
+#### Docker Commands
+
+```bash
+# Start the development server
+docker-compose up
+
+# Start in background
+docker-compose up -d
+
+# Stop the server
+docker-compose down
+
+# Rebuild the container (after dependency changes)
+docker-compose up --build
+
+# View logs
+docker-compose logs -f
+
+# Access the container shell
+docker-compose exec jekyll bash
+```
+
+### Option 2: Local Development
+
+#### Prerequisites
 - Ruby (version 2.6 or higher)
 - RubyGems
 - GCC and Make
 
-### Installation
+#### Installation
 
 1. **Clone the repository**
    ```bash
