@@ -172,7 +172,8 @@ a:hover {
 
 /* Blog styles */
 .blog-header, .projects-header, .background-header {
-    background-color: #f8f9fa;
+    background-color: #003366;
+    color: #f8f9fa;
     padding: 3rem 0;
     text-align: center;
 }
