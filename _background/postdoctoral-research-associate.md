@@ -17,3 +17,5 @@ A key technique in a mathematical modellers toolbox is to **systematically** red
 
 ### Numerical solutions
 A key aspect of this work was to contribute the subglacial drainage model to the numerical ice-sheet model BISICLES. This is a C++/Fortran project that uses adaptive mesh reduction and the finite-difference method to efficiently simulate ice-sheet dynamics. After developing the appropriate model, integrating it into BISICLES, we were able to test the subsequent numerical predictions against those of the reduced, toy model under test conditions (i.e., for a glacier confined to a channel).
+
+For more information see the project page [HERE]({{ site.baseurl }}{% link _projects/Ice_sheets.md %}).
