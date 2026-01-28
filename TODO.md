@@ -14,3 +14,6 @@
 
 ### Data
 - Data monetisation, management, importance, sharing, security, tradeoffs (access/use/...).
+
+### Fundamentals
+- Uncertainty (communication (e.g., in geoscience, geospatial), decision making,...)
