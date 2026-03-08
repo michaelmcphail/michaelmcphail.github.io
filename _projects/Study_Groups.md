@@ -50,7 +50,7 @@ We used models for fish population---consisting of partial differential equation
 Study group report not yet available; although, some of the authors went onto publish subsequent work.
 
 
-<img src="/assets/images/Study_groups/Aims2019_shifted_right.png" style="max-width: 300px; height: auto;">
+<img src="/assets/images/Study_groups/Aims2019.png" style="max-width: 300px; height: auto;">
 
 **Fig.1** *An image of the attendees of the Cape Town study group (2019)*
 
