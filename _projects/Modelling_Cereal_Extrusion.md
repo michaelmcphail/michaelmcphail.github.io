@@ -34,7 +34,7 @@ We can better understand the <b>texture</b> of the product, for which the final 
 
 **Fig.1** *The evolution of a cross-section of an extruded product with respect to a reduced-time variable &tau;. This 2D model is coupled to a 1D model of axial evolution. Through this coupling, the map from &tau; to axial distance is determined.*
 
-<img src="/assets/images/Cereal/Mickey_Full_Temperature_graded.gif" style="max-width: 300px; height: auto;">
+<img src="/assets/images/Cereal/mickey_Full_Temperature_graded.gif" style="max-width: 300px; height: auto;">
 
 **Fig.2** *A 3D illustration of the evolution of an extruded mixture. The transition from red to blue colouring indicates the drop in temperature as the product expands.*
 
