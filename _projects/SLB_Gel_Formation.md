@@ -28,11 +28,11 @@ We also used COMSOL, proprietary multi-physics software, to perform full numeric
 
 - **ComSol** for full numerical simulation
 
-<img src="/assets/images/profile/Profile_image.jpg" style="max-width: 300px; height: auto;">
+<img src="/assets/images/SLB_gel_formation/Basic_Schematic_with_species.png" style="max-width: 300px; height: auto;">
 
 **Fig.1** *A schematic of a device for manufacturing hollow gel-sleeves. In this case, a solution of reactant A (red) is injected into a solution of reactant B (blue). A reaction takes place where the solutions meet, producing a gel (purple).*
 
-<img src="/assets/images/profile/Profile_image.jpg" style="max-width: 300px; height: auto;">
+<img src="/assets/images/SLB_gel_formation/3D_representation_of_gel.png" style="max-width: 300px; height: auto;">
 
 **Fig.2** *Results of a similation performed using COMSOL illustrating the annular flow of a solution of reactant b (blue) enclosing an evolving hollow gel-sleeve (transition) and an axisymmetric solution of reactant A (red)*
 

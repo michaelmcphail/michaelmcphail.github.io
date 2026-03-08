@@ -12,7 +12,7 @@ excerpt: "Combined analytic and numerical methods to analyse and simulate ice-sh
 For my Postdoc at the Mathematical Institute at the University of Oxford, I worked with Prof. Ian Hewitt on a mathematical geoscience project. The goal of the work was to better understand the interaction between an ice-sheet and the subglacial drainage system. The subglacial drainage system fluctuates seasonally, and in doing so imparts a rapidly fluctuating effective basal friction on the ice sheet. This two-way, nonlinear interaction between sheet and subglacial hydrology leads to interesting dynamic behaviour, but poses a challenging simulation problem. A particular challenge is the existence of vastly different time-scales (months vs millenia) and spatial scales (metres vs kilometers).
 
 ## Key projects
-### Analytical simplifications
+### Analytic simplifications
 A key technique in a mathematical modellers toolbox is to **systematically** reduce the governing equations---in this case consisting of a system of nonlinear partial differential equations---into more a more tractable form. For the ice-sheet--subglacial-drainage system we considered a thin glacier confined in a channel, a realistic and important scenario as many ice-sheet outlets take such a form. Exploiting these assumptions allower for considerable simplifications to the governing equations. The resultant system was relatively straightforward to solve numerically in Matlab, providing an invaluable toy model by which we could study the properties of the governing equations and have a baseline to sanity check full numerical solutions.
 
 ### Numerical solutions

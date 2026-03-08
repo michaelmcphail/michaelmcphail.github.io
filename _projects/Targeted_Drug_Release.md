@@ -25,11 +25,11 @@ Our investigation produced three key conclusions: classical heat transfer models
 
 - **Mathematica** for simulation and visualisation
 
-<img src="/assets/images/profile/Profile_image.jpg" style="max-width: 300px; height: auto;">
+<img src="/assets/images/Targeted_drug_release/nanoparticle_with_gel.png" style="max-width: 300px; height: auto;">
 
 **Fig.1** *A hydrogel (blue) coated nanoparticle (grey). Below a critical temperature the hydrogel is hydrophilic, and loaded with water and some drug (red). If heated above a critical temperature, the hydrogel becomes hydrophobic, expelling stored water and its drug load.*
 
-<img src="/assets/images/profile/Profile_image.jpg" style="max-width: 300px; height: auto;">
+<img src="/assets/images/Targeted_drug_release/SWParticle.gif" style="max-width: 300px; height: auto;">
 
 **Fig.2** *The energy of magnetization orientations for different applied fields (purple arrow). Allignment with the field is energetically favourable. If the magnetization of a nanoparticle flips from unaligned to aligned, energy is released corresponding to the energy difference between these two states.*
 
