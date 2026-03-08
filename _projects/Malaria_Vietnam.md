@@ -25,14 +25,14 @@ As a consequence of this quite sophisticated modelling pipeline, we were able to
 - **R** for geospatial modelling and mapping
 
 
-<img src="/assets/images/profile/Profile_image.jpg" style="max-width: 300px; height: auto;">
+<img src="/assets/images/Metrics_near_elimination/Network_model.png" style="max-width: 300px; height: auto;">
 
 **Fig.1** *A schematic of the network model that uses case data, augmented to include spatiotemporal seperation between cases, to infer a case-based reproduction number; thus, assigning additional information to each case. This model forms the foundation of subsequent spatial analysis and data-bias correction.*
 
-<img src="/assets/images/profile/Profile_image.jpg" style="max-width: 300px; height: auto;">
+<img src="/assets/images/Metrics_near_elimination/Three_metrics.png" style="max-width: 300px; height: auto;">
 
 **Fig.2** *Three strategically useful metrics quantifying different dimensions of risk: receptivity, which describes the risk of local transmission; vulnerability, which describes the risk due to importation; and malariogenic potential, which describes the confluence of both quantities.*
 
-<img src="/assets/images/profile/Profile_image.jpg" style="max-width: 300px; height: auto;">
+<img src="/assets/images/Metrics_near_elimination/Seasonal_receptivity_spikes.png" style="max-width: 300px; height: auto;">
 
 **Fig.3** *We were able to identify localised pockets where expected receptivity seasonally exceeds one; posing risks of outbreaks and progress reversal.*
