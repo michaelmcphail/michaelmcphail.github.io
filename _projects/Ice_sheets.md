@@ -29,6 +29,6 @@ We complemented this work by considering simple cases where significantly reduce
 
 **Fig.1** *The height of the surface of the Pine Island glacier. This is the output of an example problem included as part of BISICLES. I produced the image using Mathematica.*
 
-<img src="/assets/images/Ice_sheets/PIGVel.gif" style="max-width: 300px; height: auto;">
+<img src="/assets/images/Ice_sheets/PIGVel_mag.gif" style="max-width: 300px; height: auto;">
 
 **Fig.2** *The surface velocity of the Pine Island glacier. This is the output of an example problem included as part of BISICLES. I produced the image using Mathematica.*
